@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+
+    string str = "Muhammed";
+
+    stack<char>s; //using STL
+
+    for(int i=0; i<str.length(); i++){
+        char ch = str[i];
+        s.push(ch);
+    }
+
+    string ans = "";
+
+    while(!s.empty()){
+        char ch = s.top(); //top element pushing back in ans string;
+        ans.push_back(ch);
+        s.pop(); //element will be remove from the stack;
+
+    }
+
+    cout<<ans<<endl; 
+
+    return 0;
+}
